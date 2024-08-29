@@ -1,0 +1,35 @@
+React flow and structure
+
+In public folder,we have html file,also called SPA(single page application),(loads only once)
+manifest.json provides metadata used when your web app is installed on a user's mobile device or desktop. 
+in package.json, along with react-dom and react, we also get read-scripts which is responsible for loading index.js in html file
+
+--> vite
+while making new component in src (vite) , component file should be jsx ,also should start with capital letter(not the file name, but function that we are exporting, better practice to use file name to be capital too)
+we can return only single element from component, so we can wrap all the lements to be sent in a div and return that div
+(eg. function Day3(){
+        return(
+            <div>
+                <h1></h1>
+                <p></p>
+                ....
+            </div>
+        )
+    };
+    export default Day3
+
+    we can use 
+    return(
+        <h1></h1>
+        <p></p>
+    )
+)
+
+it became a common problem so insted of div we can simple use empty brackets (<> </>) also called fragment
+
+
+--> create-react-app
+
+component file need not be jsx (if html is getting returned, use jsx, if only java code is returned, you can use js. but in vite, both should be jsx)
+function name should be capital (better to use file name capital too)
+use fragments (cant return more than 1 element)
