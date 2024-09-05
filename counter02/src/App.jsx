@@ -9,14 +9,14 @@ function App() {
   let [counter, setCounter] = useState(5)  //return an array of two elements (a variable and a function)
   // (will update the variable counter everywhere in ui)
   const addValue = ()=>{
-    if(counter<=20){
+    if(counter<20){
       counter ++;
       setCounter(counter);
     } 
   }
 
   const removeVal = ()=>{
-    if(counter >= 0){
+    if(counter > 0){
       counter --;
       setCounter(counter);
     }
