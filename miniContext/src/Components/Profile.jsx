@@ -7,7 +7,7 @@ function Profile() {
   if(!user) return <div>please login</div>
   else return (
     <div>
-      <h2>Profile</h2>
+      <h2>Profile using contextApi</h2>
       <h3>{user.username}</h3>
     </div>
   )
