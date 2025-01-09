@@ -14,3 +14,4 @@ function Button({
             {children}</button>
     )
 }
+export default Button

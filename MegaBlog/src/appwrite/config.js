@@ -121,14 +121,12 @@ export class Service{
     }
 
     filePreview(fileId){
-        try{
+       
             return this.bucket.getFilePreview(
                 conf.appwriteBucketId,
                 fileId,
             )
-        }catch(error){
-            console.log("appwrite servide:: filepreview:: ",error);
-        }
+        
     }
 }
 
